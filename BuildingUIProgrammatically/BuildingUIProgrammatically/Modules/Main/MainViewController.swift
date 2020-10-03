@@ -285,6 +285,9 @@ extension MainViewController: UITableViewDelegate {
             
             present(vc, animated: true)
         }
+        else if let cell = tableView.cellForRow(at: indexPath) as? SelectableCell {
+            cell.toggleMark()
+        }
     }
 }
 

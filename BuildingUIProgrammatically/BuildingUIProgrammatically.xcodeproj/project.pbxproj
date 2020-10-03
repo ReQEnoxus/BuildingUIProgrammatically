@@ -35,6 +35,7 @@
 		73A20762251E116A0023CDF8 /* UIColor+FromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A20761251E116A0023CDF8 /* UIColor+FromHex.swift */; };
 		73A20764251E11F10023CDF8 /* UITableViewCell+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A20763251E11F10023CDF8 /* UITableViewCell+ClassName.swift */; };
 		73A20767251E123D0023CDF8 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A20766251E123D0023CDF8 /* UITableView+Register.swift */; };
+		73F1F45125285C1B00B9C40A /* SelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1F45025285C1B00B9C40A /* SelectableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		73A20761251E116A0023CDF8 /* UIColor+FromHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+FromHex.swift"; sourceTree = "<group>"; };
 		73A20763251E11F10023CDF8 /* UITableViewCell+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ClassName.swift"; sourceTree = "<group>"; };
 		73A20766251E123D0023CDF8 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		73F1F45025285C1B00B9C40A /* SelectableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				733687FE251E14A00068CA81 /* Large Title Cell */,
 				733687FD251E14740068CA81 /* Subtitled Large Title Cell */,
 				733687EB251E13AD0068CA81 /* Cell ViewModels */,
+				73F1F45025285C1B00B9C40A /* SelectableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				73A20762251E116A0023CDF8 /* UIColor+FromHex.swift in Sources */,
 				733687F7251E13E90068CA81 /* ListViewModel.swift in Sources */,
 				73368812251E36210068CA81 /* ListViewController.swift in Sources */,
+				73F1F45125285C1B00B9C40A /* SelectableCell.swift in Sources */,
 				733687FA251E14000068CA81 /* ListCellViewModel.swift in Sources */,
 				733687F5251E13DA0068CA81 /* TaskViewModel.swift in Sources */,
 				73368808251E1B0A0068CA81 /* ListsHeaderTableViewCell.swift in Sources */,

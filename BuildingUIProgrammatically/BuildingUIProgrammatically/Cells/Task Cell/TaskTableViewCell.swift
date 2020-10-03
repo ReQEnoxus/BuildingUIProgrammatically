@@ -44,6 +44,8 @@ class TaskTableViewCell: UITableViewCell {
         
         return view
     }()
+    
+    var viewModel: TaskViewModel!
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         
@@ -57,6 +59,8 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func configure(with viewModel: TaskViewModel) {
+        
+        self.viewModel = viewModel
         
         let unmarkedImageName = viewModel.hasLightAppearance ? "unmarked_light" : "unmarked"
         markedImageView.image = UIImage(named: viewModel.isMarked ? "marked" : unmarkedImageName)
@@ -138,3 +142,13 @@ class TaskTableViewCell: UITableViewCell {
         }
     }
 }
+
+extension TaskTableViewCell: SelectableCell {
+    
+    func toggleMark() {
+        
+        viewModel.isMarked.toggle()
+        configure(with: viewModel)
+    }
+}
+

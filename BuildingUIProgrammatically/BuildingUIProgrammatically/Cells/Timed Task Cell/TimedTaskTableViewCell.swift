@@ -95,6 +95,8 @@ class TimedTaskTableViewCell: UITableViewCell {
         
         return imageView
     }()
+    
+    var viewModel: TaskViewModel!
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -107,6 +109,8 @@ class TimedTaskTableViewCell: UITableViewCell {
     }
     
     func configure(with viewModel: TaskViewModel) {
+        
+        self.viewModel = viewModel
         
         let unmarkedImageName = viewModel.hasLightAppearance ? "unmarked_light" : "unmarked"
         markedImageView.image = UIImage(named: viewModel.isMarked ? "marked" : unmarkedImageName)
@@ -270,3 +274,13 @@ class TimedTaskTableViewCell: UITableViewCell {
         }
     }
 }
+
+extension TimedTaskTableViewCell: SelectableCell {
+    
+    func toggleMark() {
+        
+        viewModel.isMarked.toggle()
+        configure(with: viewModel)
+    }
+}
+

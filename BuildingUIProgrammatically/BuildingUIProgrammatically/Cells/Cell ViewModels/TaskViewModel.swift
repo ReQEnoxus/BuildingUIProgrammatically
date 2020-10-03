@@ -29,7 +29,7 @@ struct TaskViewModel {
     
     let title: String
     let listType: ListType?
-    let isMarked: Bool
+    var isMarked: Bool
     let subLabelConfiguration: SubLabelConfiguration?
     let hasLightAppearance: Bool
     
